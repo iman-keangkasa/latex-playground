@@ -1,11 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.15)  17 OCT 2018 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.15)  17 OCT 2018 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **chapter1.tex
 (./chapter1.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2018-04-01> patch level 5
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
@@ -211,29 +210,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] [5] [6] [7] [8] [9] (./chapter1.aux) ) 
+[2] [3] [4] [5] [6] [7] [8] [9] [10] (./chapter1.aux) ) 
 Here is how much of TeX's memory you used:
- 756 strings out of 492649
- 10102 string characters out of 6129606
- 66545 words of memory out of 5000000
- 4699 multiletter control sequences out of 15000+600000
+ 756 strings out of 492639
+ 10102 string characters out of 6129286
+ 67841 words of memory out of 5000000
+ 4705 multiletter control sequences out of 15000+600000
  8935 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,6n,19p,1372b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texm
-f-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/cm-super/sfrm1000.pfb>
-Output written on chapter1.pdf (9 pages, 131245 bytes).
+{/usr/local/texlive/2018
+/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on chapter1.pdf (10 pages, 137997 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
