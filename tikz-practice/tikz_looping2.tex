@@ -1,0 +1,12 @@
+\documentclass[crop,tikz]{standalone}
+\begin{document}
+	\begin{tikzpicture}
+		\foreach \x in {1,...,5,7,8,...,12}
+			\foreach \y in {1,...,5}
+			{
+					\draw (\x,\y) +(-.5cm,-.5cm) rectangle +(.5cm,.5cm);
+					\draw (\x,\y) node{$x_\y,y_\x$};
+			}
+	\end{tikzpicture}
+\end{document}
+
