@@ -1,0 +1,32 @@
+\documentclass[a4paper, 10pt]{article}
+\title{Two dimensional tracking and labeling for three dimensional point cloud labeling}
+\usepackage{natbib}
+\usepackage{soul,color}
+%\usepackage[dvipsnames]{xcolor}
+%defining highlight color
+\begin{document}
+\maketitle
+%\begin{document}
+\section{Abstract}
+A database for an isolated three dimensional point clouds has yet been introduced. 
+The construction of this database can reduce the time of training for neural network
+model on human motion because isolated point cloud would not require the analysis and 
+the computation of the whole scene in three dimensional space. 
+This paper will attempt to label three dimensional point clouds with training
+in two dimensional space.
+Human identification is done followed by tracking on the sequences of images from
+RGB-D output. Classification of the human motion is done around the boundaries
+of the tracking. These classification consist of five labels: walking, running,
+ducking, falling, and jumping. The training for these classifier are done using
+various 2D image databases. The two dimensional tracking boundaries are
+projected into three dimensional space that subsequently discriminate the point
+clouds to its corresponding label. These labels and the subset point clouds are
+used to construct a human action point cloud database. 
+
+\section{Introduction}
+%\section{Point cloud databases on Human movement}
+%\section{Methodology}
+%\section{Movement taxonomy}
+%\section{Data structure on a human reactive action database}
+
+\end{document}
