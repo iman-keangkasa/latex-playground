@@ -86,13 +86,20 @@ autonomous robot. With a semi-online design, an autonomous robot perform poorly
 in highly dynamic environments. 
 
 A part of SLAM solutions is on
-registering multiple maps in local coordinate into maps with global coordinate
+registering multiple maps from local coordinates into maps in global coordinate
 system. As autonomous robot moves in an unknown environment, a collection of
 maps in the form of scans are introduced to its vision system. One method of
 map registration is done post-exploration \citep{Burgard1999}. However, online
-registration is more desirable in the context of an autonomous robot.  
+registration is more desirable in the context of an autonomous robot. A
+semi-online map registration would bundle a collection of map before registering
+the map globally during exploration. 
 
+This paper extend the definition of occupancy in octomap by introducing
+continous probability value instead of binary in each grid cell. We will compare
+the perfomance of a number of path-planning algorithms in these maps. We will use octomap as the
+benchmark. The metric of perfomance is based on time to complete a path planning
+from a predefined starting position to a final position in a static environment.
+This approach is reapplied for environment containing moving objects and human.
 
-\bibliography{../bibtex/masters_thesis}
 \bibliographystyle{apalike}
 \end{document}
