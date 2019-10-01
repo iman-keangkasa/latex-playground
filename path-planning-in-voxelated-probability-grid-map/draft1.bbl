@@ -6,6 +6,12 @@ Borrmann, D., Elseberg, J., Lingemann, K., N{\"{u}}chter, A., and Hertzberg, J.
 \newblock {Globally consistent 3D mapping with scan matching}.
 \newblock {\em Robotics and Autonomous Systems}, 56(2):130--142.
 
+\bibitem[Burgard et~al., 1999]{Burgard1999}
+Burgard, W., Fox, D., and Jans, H. (1999).
+\newblock {Sonar-based mapping with mobile robots using EM}.
+\newblock {\em Machine Learning-International Workshop Then Conference-. Morgan
+  Kaufmann Publishers, Inc.}, pages 67--76.
+
 \bibitem[Cole and Newman, 2006]{Cole2006}
 Cole, D.~M. and Newman, P.~M. (2006).
 \newblock {Using laser range data for 3D SLAM in outdoor environments}.
@@ -23,11 +29,48 @@ Engelhard, N., Endres, F., Hess, J., Sturm, J., and Burgard, W. (2011).
 \newblock {\em In Proc. of the RGB-D Workshop on 3D Perception in Robotics at
   the European Robotics Forum, 2011}, (c).
 
+\bibitem[Grisetti et~al., 2010]{Grisetti}
+Grisetti, G., K{\"{u}}mmerle, R., Stachniss, C., Frese, U., and Hertzberg, C.
+  (2010).
+\newblock {Hierarchical optimization on manifolds for online 2D and 3D
+  mapping}.
+\newblock In {\em Proceedings - IEEE International Conference on Robotics and
+  Automation}, pages 273--278.
+
 \bibitem[Hornung et~al., 2013]{Hornung2013}
 Hornung, A., Wurm, K.~M., Bennewitz, M., Stachniss, C., and Burgard, W. (2013).
 \newblock {OctoMap: An efficient probabilistic 3D mapping framework based on
   octrees}.
 \newblock {\em Autonomous Robots}, 34(3):189--206.
+
+\bibitem[Member and Member, 2006]{Birk}
+Member, A.~B. and Member, S.~C. (2006).
+\newblock {Merging occupancy grid maps from multiple robots}.
+\newblock {\em Proceedings of the IEEE}, 94(7):1384--1397.
+
+\bibitem[Moravec, 1989]{Moravec1988}
+Moravec, H.~P. (1989).
+\newblock {Sensor Fusion in Certainty Grids for Mobile Robots}.
+\newblock In {\em Sensor Devices and Systems for Robotics}, pages 253--276.
+
+\bibitem[Olson, 2009]{Olson2009}
+Olson, E. (2009).
+\newblock {Real-time correlative scan matching}.
+\newblock In {\em 2009 IEEE International Conference on Robotics and
+  Automation}, pages 4387--4393. IEEE.
+
+\bibitem[Ray et~al., 2012]{Ray}
+Ray, R., Kumar, V., Banerji, D., and Shome, S.~N. (2012).
+\newblock {Simultaneous localisation and image intensity based occupancy grid
+  map building - A new approach}.
+\newblock In {\em Proceedings - 3rd International Conference on Intelligent
+  Systems Modelling and Simulation, ISMS 2012}, pages 143--148.
+
+\bibitem[Rusu and Cousins, 2011]{Rusu2011}
+Rusu, R.~B. and Cousins, S. (2011).
+\newblock {3D is here: Point Cloud Library (PCL)}.
+\newblock In {\em Proceedings - IEEE International Conference on Robotics and
+  Automation}, pages 1--4. IEEE.
 
 \bibitem[Weingarten and Siegwart, 2005]{Weingarten2005}
 Weingarten, J. and Siegwart, R. (2005).

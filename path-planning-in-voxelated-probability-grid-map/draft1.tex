@@ -59,7 +59,7 @@ computational efficiency for point clouds manipulation may increase.
 
 Graph maps use graph theory to represent an environment semantically. The
 concept of graph maps relates poses and features as nodes and abstracting raw
-sensor data into pose-graph \citep{Grisetti2010}. A pose of a robot contains
+sensor data into pose-graph \citep{Grisetti}. A pose of a robot contains
 positional information that reflects the degree of freedom of the robot.
 Unlike point clouds, graph
 maps lacks geometric structure and oftenly used for optimizing localization
@@ -72,7 +72,7 @@ the occupancy of a two dimensional space. This map was introduced by \citet{Mora
 an autonomous robot. From this map, the environment is divided into planar grid
 cell to represent occupancy. The concept of occupancy grid cell is still used
 today to develop a more advance mapping and localization method particularly for
-SLAM solution \citep{Ray2012,Birk2006}. 
+SLAM solution \citep{Ray,Birk}. 
 
 Three dimensional occupancy grid map such as Octomap \citep{Hornung2013} enables
 robot to move in three-dimensional space with three to six DOFs. Octomap extend
@@ -95,11 +95,12 @@ semi-online map registration would bundle a collection of map before registering
 the map globally during exploration. 
 
 This paper extend the definition of occupancy in octomap by introducing
-continous probability value instead of binary in each grid cell. We will compare
+continous probability value instead of binary values in each grid cell. 
+We will compare
 the perfomance of a number of path-planning algorithms in these maps. We will use octomap as the
 benchmark. The metric of perfomance is based on time to complete a path planning
 from a predefined starting position to a final position in a static environment.
 This approach is reapplied for environment containing moving objects and human.
-
+\bibliography{../bibtex/masters_thesis}
 \bibliographystyle{apalike}
 \end{document}
