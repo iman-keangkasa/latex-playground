@@ -1,0 +1,38 @@
+\begin{thebibliography}{}
+
+\bibitem[Borrmann et~al., 2008]{Borrmann2008}
+Borrmann, D., Elseberg, J., Lingemann, K., N{\"{u}}chter, A., and Hertzberg, J.
+  (2008).
+\newblock {Globally consistent 3D mapping with scan matching}.
+\newblock {\em Robotics and Autonomous Systems}, 56(2):130--142.
+
+\bibitem[Cole and Newman, 2006]{Cole2006}
+Cole, D.~M. and Newman, P.~M. (2006).
+\newblock {Using laser range data for 3D SLAM in outdoor environments}.
+\newblock In {\em Proceedings - IEEE International Conference on Robotics and
+  Automation}, volume 2006, pages 1556--1563. IEEE.
+
+\bibitem[Elfes, 1989]{Elfes1989}
+Elfes, A. (1989).
+\newblock {Using occupancy grids for mobile robot perception and navigation}.
+\newblock {\em Computer}, 22(6):46--57.
+
+\bibitem[Engelhard et~al., 2011]{Engelhard2011}
+Engelhard, N., Endres, F., Hess, J., Sturm, J., and Burgard, W. (2011).
+\newblock {Real-time 3D visual SLAM with a hand-held RGB-D camera}.
+\newblock {\em In Proc. of the RGB-D Workshop on 3D Perception in Robotics at
+  the European Robotics Forum, 2011}, (c).
+
+\bibitem[Hornung et~al., 2013]{Hornung2013}
+Hornung, A., Wurm, K.~M., Bennewitz, M., Stachniss, C., and Burgard, W. (2013).
+\newblock {OctoMap: An efficient probabilistic 3D mapping framework based on
+  octrees}.
+\newblock {\em Autonomous Robots}, 34(3):189--206.
+
+\bibitem[Weingarten and Siegwart, 2005]{Weingarten2005}
+Weingarten, J. and Siegwart, R. (2005).
+\newblock {EKF-based 3D SLAM for structured environment reconstruction}.
+\newblock In {\em 2005 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems, IROS}, pages 2089--2094.
+
+\end{thebibliography}

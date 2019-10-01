@@ -1,2 +1,98 @@
-\documentclass[a4paper,10pt{article}
+\documentclass[a4paper,10pt]{article}
+\title{Probabilistically Voxelated Occupancy Map for Path-Planning}
+\author{}
+\usepackage{textcomp}
+\usepackage{cite}
+\usepackage[colon]{natbib}
 
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Map-building is one half of a solution to simultaneous localization and mapping
+(SLAM) problem. SLAM acts as a utility to solve robotic exploration in an unknown
+environment. SLAM is stochastic and involves error in data reading. Stochastic
+information from multiple sensors are used to form information gain through
+filtering and data fusion. 
+
+Map building requires the same data fusion for local
+map registration. The registration method involves filtering technique to
+transform a local map into a global map. However, most of the solution for three
+dimensional map-building are in the form of point clouds, occupancy grid map,
+and a variant of occupancy grid map. Point clouds involves
+rich representation of geometric data for autonomous robots. Unfortunately, point
+clouds increases computational
+load \citep{Borrmann2008,Cole2006,Engelhard2011,Weingarten2005}. These point clouds are discrete series of metrical data. A
+map suiting the robotic ability to move in three dimensional space requires
+three dimensional map that emphasize the geometric information of an
+environment and the have a structure that will not hinder online computation.
+
+In tandem to automatic motion, this map should represent the probabilistic
+nature of the sensor and the locomotion of the robot to be effectively used in
+SLAM solution. \citet{Hornung2013} introduced a three dimensional occupancy grid
+map, coined as Octomap, that extend the two dimensional grid map introduced by \citet{Elfes1989}.
+
+Octomap uses grid cells seeded with binary values to represent occupancy in
+space. The grid cells are stacked continuosly in series of cubic primitives.
+Octomap thus far are used only to represent static environments. This paper will
+attempt to create a variant of octomap, continous-octomap, to discern its
+feasibility on dynamic environment representation for path-planning purposes. 
+
+\section{Related Works on Evolution of Map Building}
+A confident map is instrumental for a correct localization. Since mid-1990's, the
+mobility of mobile robots have increased from three degree-of-freedoms to six
+degree-of-freedoms (DOFs). A manipulator such as an articulated  industrial
+robot arm also have 6-DOF end effector. An autonomous robot with these 
+mobilities requires confident map that represent an environment in three 
+dimensional space. Three types of 
+maps commonly used for autonomous robots are point clouds, graph maps, and
+occupancy grid maps. 
+
+Point clouds are three dimensional representation of spatial space. 
+Point clouds are
+often used with iterative closest point matching (ICP) or scan matching to
+register local maps. These type of maps are limited by their large number of
+information containing metrical data that puts computational strain to an
+algorithm \citep{Olson2009}. However, with the advent of parellel computing,
+and the optimization of a library called OpenCL \citep{Rusu2011}, the
+computational efficiency for point clouds manipulation may increase.
+
+Graph maps use graph theory to represent an environment semantically. The
+concept of graph maps relates poses and features as nodes and abstracting raw
+sensor data into pose-graph \citep{Grisetti2010}. A pose of a robot contains
+positional information that reflects the degree of freedom of the robot.
+Unlike point clouds, graph
+maps lacks geometric structure and oftenly used for optimizing localization
+processes in SLAM solution.
+
+Two dimensional occupancy grid map is a type of map that contains probability description of an
+environment from sensor reading. The map uses Poisson distribution to ascertain
+the occupancy of a two dimensional space. This map was introduced by \citet{Moravec1988} and
+\citet{Elfes1989} using sonar sensors, as an output, to map an environment for
+an autonomous robot. From this map, the environment is divided into planar grid
+cell to represent occupancy. The concept of occupancy grid cell is still used
+today to develop a more advance mapping and localization method particularly for
+SLAM solution \citep{Ray2012,Birk2006}. 
+
+Three dimensional occupancy grid map such as Octomap \citep{Hornung2013} enables
+robot to move in three-dimensional space with three to six DOFs. Octomap extend
+the use of grid map-building into three dimensional space and embed each grid
+cell with a relaxed logit function to give a binary value of occupancy. In this
+map, occupied space is represented by a probability value of "1" and unoccupied
+space is represented by a probability value of "0". Octomap adopts octree data
+structure to allow efficient computation of the localization posterior
+distribution. However, currently, octomap is only being used for semi-online
+autonomous robot. With a semi-online design, an autonomous robot perform poorly
+in highly dynamic environments. 
+
+A part of SLAM solutions is on
+registering multiple maps in local coordinate into maps with global coordinate
+system. As autonomous robot moves in an unknown environment, a collection of
+maps in the form of scans are introduced to its vision system. One method of
+map registration is done post-exploration \citep{Burgard1999}. However, online
+registration is more desirable in the context of an autonomous robot.  
+
+
+\bibliography{../bibtex/masters_thesis}
+\bibliographystyle{apalike}
+\end{document}
