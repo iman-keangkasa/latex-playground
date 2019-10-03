@@ -1,9 +1,29 @@
 \documentclass[a4paper,10pt]{article}
-\title{Probabilistically Voxelated Occupancy Map for Path-Planning}
-\author{}
+\title{The Performance of Occupancy Map and Its Variants for Path-Planning in
+a Dynamic Environment}
+
+\author{
+		Hafiz Iman\thanks{Dept. of Mechatronics Engineering,
+			Kulliyah of Engineering,International Islamic University Malaysia,
+			hafiz.ghazman@gmail.com} 
+		\and 
+		Raisuddin Khan\thanks{Dept. of Mechatronics Engineering,
+			Kulliyah of Engineering,International Islamic University Malaysia,
+			University Malaysia,
+			raisuddin@iium.edu.my}
+			}
+
+\usepackage{soul}
+\usepackage{color}
 \usepackage{textcomp}
 \usepackage{cite}
 \usepackage[colon]{natbib}
+
+%Highlight color definition
+\DeclareRobustCommand{\hlcyan}[1]{{\sethlcolor{cyan}\hl{#1}}}
+\DeclareRobustCommand{\hlred}[1]{{\sethlcolor{red}\hl{#1}}}
+\DeclareRobustCommand{\hlgreen}[1]{{\sethlcolor{green}\hl{#1}}}
+\DeclareRobustCommand{\hlyellow}[1]{{\sethlcolor{yellow}\hl{#1}}}
 
 \begin{document}
 \maketitle
@@ -35,7 +55,7 @@ map, coined as Octomap, that extend the two dimensional grid map introduced by \
 Octomap uses grid cells seeded with binary values to represent occupancy in
 space. The grid cells are stacked continuosly in series of cubic primitives.
 Octomap thus far are used only to represent static environments. This paper will
-attempt to create a variant of octomap, continous-octomap, to discern its
+attempt to create a variant of Octomap, continous-octomap, to discern its
 feasibility on dynamic environment representation for path-planning purposes. 
 
 \section{Related Works on Evolution of Map Building}
@@ -77,11 +97,12 @@ SLAM solution \citep{Ray,Birk}.
 Three dimensional occupancy grid map such as Octomap \citep{Hornung2013} enables
 robot to move in three-dimensional space with three to six DOFs. Octomap extend
 the use of grid map-building into three dimensional space and embed each grid
-cell with a relaxed logit function to give a binary value of occupancy. In this
+cell, also known as a voxel, with a relaxed logit function to give a binary
+value of occupancy. In this
 map, occupied space is represented by a probability value of "1" and unoccupied
 space is represented by a probability value of "0". Octomap adopts octree data
 structure to allow efficient computation of the localization posterior
-distribution. However, currently, octomap is only being used for semi-online
+distribution. However, currently, Octomap is only being used for semi-online
 autonomous robot. With a semi-online design, an autonomous robot perform poorly
 in highly dynamic environments. 
 
@@ -94,13 +115,27 @@ registration is more desirable in the context of an autonomous robot. A
 semi-online map registration would bundle a collection of map before registering
 the map globally during exploration. 
 
-This paper extend the definition of occupancy in octomap by introducing
+Occupancy grid map and its variant, Octomap,
+are map solutions to for autonomous robots. It's
+applications are defined based on SLAM problem. This paper will test
+the performance of Octomap in context of path planning solutions and not in
+the context of
+SLAM solution per se. To that end, this paper will also introduce an extend
+definition of occupancy based on the Octomap data structure. We will coined
+this variant as continuous-octomap where a voxel is embedded with
 continous probability value instead of binary values in each grid cell. 
 We will compare
-the perfomance of a number of path-planning algorithms in these maps. We will use octomap as the
+the perfomance of a number of path-planning algorithms in these maps. We will
+use Octomap as the
 benchmark. The metric of perfomance is based on time to complete a path planning
 from a predefined starting position to a final position in a static environment.
-This approach is reapplied for environment containing moving objects and human.
+We will continue to test the performance of the path planner in an environment
+containing moving objects and humans.
+
+\hlyellow{type of path planner used}
+
+\hlyellow{we will only use one type of smoothing algorithm for the path planner}
+
 \bibliography{../bibtex/masters_thesis}
 \bibliographystyle{apalike}
 \end{document}
